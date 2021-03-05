@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabajos</title>
+	<audio src="zynia.mp3" preload loop id="home"></audio>
+<style type="text/css">
+	    body{
+	    	background: linear-gradient(to left, red 20%, pink 80%);
+	    }
+	    		.abc{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+		.cont{
+			position: absolute;
+			top: 300px;
+			left: 580px;
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			color: #FFFFFF;
+font-size: 50px;
+text-align: center;
+border-radius: 5px;
+				}
+	    		.as{
+position: absolute;
+top: 250px;
+left: 580px;
+width: 200px;
+height: 200px;
+background-color: blue;
+color: #FFFFFF;
+font-size: 50px;
+text-align: center;
+border-radius: 30px;
+		} 
+		.bs{
+position: absolute;
+top: 250px;
+left: 580px;
+width: 200px;
+height: 200px;
+background-color: red;
+color: #FFFFFF;
+font-size: 50px;
+text-align: center;
+border-radius: 30px;
+display: none;
+}
+	    	.a{
+	position: absolute;
+    top: 150px;
+    left: 200px;
+    font-size: 40px;
+}
+	.ab{
+	position: absolute;
+    top: 150px;
+    left: 860px;
+    font-size: 40px;
+}
+.a1{
+	position: absolute;
+    top: 220px;
+    left: 70px;
+    font-size: 40px;
+}
+.a8{
+	position: absolute;
+    top: 220px;
+    left: 750px;
+    font-size: 40px;
+}
+.a9 {
+	position: absolute;
+	top: 400px;
+	left: 920px;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, lightblue 5%, lightgreen 60%);
+	background-color:#d67070;
+	border-radius:19px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.a9:hover {
+	background:linear-gradient(to bottom, lightgreen 5%, lightblue 100%);
+	background-color:#9fe6e6;
+}
+		.a6 {
+	position: absolute;
+	top: 400px;
+	left: 210px;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, lightblue 5%, lightgreen 60%);
+	background-color:#d67070;
+	border-radius:19px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.a6:hover {
+	background:linear-gradient(to bottom, lightgreen 5%, lightblue 100%);
+	background-color:#9fe6e6;
+}
+	    .ba1{
+    position: absolute;
+        top: 200px;
+        left: 200px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+    z-index: -5;
+    }
+    .ba1:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+    	    .ba2{
+    position: absolute;
+        top: 300px;
+        left: 500px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+       z-index: -5;
+    }
+    .ba2:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+        	    .ba3{
+    position: absolute;
+        top: 400px;
+        left: 800px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+       z-index: -5;
+    }
+    .ba3:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+            	    .music{
+    position: absolute;
+        top: 550px;
+        left: 20px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+    }
+    .music:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+                	    .nomusic{
+    position: absolute;
+        top: 550px;
+        left: 20px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+    display: none;
+    }
+    .nomusic:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+               	    .nomusic1{
+    position: absolute;
+        top: 550px;
+        left: 1200px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+    }
+    .nomusic1:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+                   	    .nomusic2{
+    position: absolute;
+        top: 550px;
+        left: 1200px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+    display: none;
+    }
+    .nomusic2:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+                   	    .nomusic3{
+    position: absolute;
+        top: 550px;
+        left: 1200px;
+        z-index: 5;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #7dd3f0 5%, #18404f 100%);
+    background-color:#7dd3f0;
+    border-radius:6px;
+    border:1px solid #1c3545;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:35px;
+    font-weight:bold;
+    padding:13px 12px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+    display: none;
+    }
+    .nomusic3:hover{background:linear-gradient(to bottom, #18404f 5%, #7dd3f0 100%)}
+       .emergente{
+    	position: absolute;
+    	top: 0px;
+    	left: 0px;
+        width:1324px;
+        height:653px;
+        background-color:#5C70F0;
+        font-size: 20px;
+        border:1px solid #000;
+        text-align: center;
+        padding:20px;
+        box-shadow: 10px 10px 10px #ccc;
+        background:linear-gradient(to bottom, #5C70F0 5%, #87CEEB 100%);
+        animation: go;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	z-index: 4;
+	display: none;
+    }
+   @keyframes go{
+   	0%{top: -2000px; left: -2000px;}
+   	100%{top: 0px; left: 0px;}
+   }
+          .emergenteb{
+    	position: absolute;
+    	top: -2000px;
+    	left: -2000px;
+        width:1324px;
+        height:653px;
+        background-color:#5C70F0;
+        font-size: 20px;
+        border:1px solid #000;
+        text-align: center;
+        padding:20px;
+        box-shadow: 10px 10px 10px #ccc;
+        background:linear-gradient(to bottom, #5C70F0 5%, #87CEEB 100%);
+        animation: bye;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	z-index: 4;
+	display: none;
+    }
+   @keyframes bye{
+   	0%{top: 0px; left: 0px;}
+   	100%{top: -2000px; left: -2000px;}
+   }
+          .emergente1{
+    	position: absolute;
+    	top: 0px;
+    	left: 0px;
+        width:1324px;
+        height:653px;
+        background-color:#5C70F0;
+        font-size: 20px;
+        border:1px solid #000;
+        text-align: center;
+        padding:20px;
+        box-shadow: 10px 10px 10px #ccc;
+        background:linear-gradient(to bottom, #5C70F0 5%, #87CEEB 100%);
+        animation: go1;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	z-index: 4;
+	display: none;
+    }
+   @keyframes go1{
+   	0%{top: -2000px; left: -2000px;}
+   	100%{top: 0px; left: 0px;}
+   }
+             .emergenteb1{
+    	position: absolute;
+    	top: -2000px;
+    	left: -2000px;
+        width:1324px;
+        height:653px;
+        background-color:#5C70F0;
+        font-size: 20px;
+        border:1px solid #000;
+        text-align: center;
+        padding:20px;
+        box-shadow: 10px 10px 10px #ccc;
+        background:linear-gradient(to bottom, #5C70F0 5%, #87CEEB 100%);
+        animation: bye1;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	z-index: 4;
+	display: none;
+    }
+   @keyframes bye1{
+   	0%{top: 0px; left: 0px;}
+   	100%{top: -2000px; left: -2000px;}
+   }
+            .emergente2{
+    	position: absolute;
+    	top: 0px;
+    	left: 0px;
+        width:1324px;
+        height:653px;
+        background-color:#5C70F0;
+        font-size: 20px;
+        border:1px solid #000;
+        text-align: center;
+        padding:20px;
+        box-shadow: 10px 10px 10px #ccc;
+        background:linear-gradient(to bottom, #5C70F0 5%, #87CEEB 100%);
+        animation: go2;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	z-index: 4;
+	display: none;
+    }
+   @keyframes go2{
+   	0%{top: -2000px; left: -2000px;}
+   	100%{top: 0px; left: 0px;}
+   }
+             .emergenteb2{
+    	position: absolute;
+    	top: -2000px;
+    	left: -2000px;
+        width:1324px;
+        height:653px;
+        background-color:#5C70F0;
+        font-size: 20px;
+        border:1px solid #000;
+        text-align: center;
+        padding:20px;
+        box-shadow: 10px 10px 10px #ccc;
+        background:linear-gradient(to bottom, #5C70F0 5%, #87CEEB 100%);
+        animation: bye2;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	z-index: 4;
+	display: none;
+    }
+   @keyframes bye2{
+   	0%{top: 0px; left: 0px;}
+   	100%{top: -2000px; left: -2000px;}
+   }
+</style>
+	<script type="text/javascript">
+		var s = 0;
+	</script>
+</head>
+<body onmousemove="position(event)">
+<div class="ba1" onclick="e1()">Ejercicio 1️⃣</div>
+<div class="ba2" onclick="e2()">Ejercicio 2️⃣</div>
+<div class="ba3" onclick="e3()">Ejercicio 3️⃣</div>
+<div class="music" onclick="pla()" id="ada">Música ⏸</div>
+<div class="nomusic" onclick="nopla()" id="ada">Música ▶</div>
+<div class="nomusic1" onclick="nopla1()">Inicio</div>
+<div class="nomusic2" onclick="nopla2()">Inicio</div>
+<div class="nomusic3" onclick="nopla3()">Inicio</div>
+<div class="emergente">
+	<script>
+		vec=[];
+		var n1=document.getElementById("nombre");
+		var y = vec.length;
+		var mayor
+		var ingre=function(){
+		n1=document.getElementById("nombre");
+		y = vec.length;
+		        suma = Number(n1.value);
+		        if (y<5) {
+				vec.push(suma);
+			}
+			else{
+				alert('Base de Datos Llena');
+			}
+			if (y==0) {
+				mayor=n1.value;
+			}
+			else if (vec[y]>mayor){
+              mayor=n1.value;
+			}
+			}
+			var Mostrar=function(){
+			var m1=document.getElementById("resultado");
+            m1.value=mayor;
+			}
+
+			var EstoyaquiperonomeejecutosoloestoyguardandoestoXD=function(){
+			var m1=document.getElementById("resultado");
+			var y = vec;
+			if (vec.length==1) {
+			var z=Math.max(vec[0]);
+		}
+		if (vec.length==2) {
+			var z=Math.max(vec[0],vec[1]);
+		}
+				if (vec.length==3) {
+			var z=Math.max(vec[0],vec[1],vec[2]);
+		}
+				if (vec.length==4) {
+			var z=Math.max(vec[0],vec[1],vec[2],vec[3]);
+		}
+				if (vec.length==5) {
+			var z=Math.max(vec[0],vec[1],vec[2],vec[3],vec[4]);
+		}
+            m1.value=z;
+
+			}
+	</script>
+			<label class="a">Número 1️⃣:</label><br><br>
+		<input type="text" id="nombre" placeholder="Ingresa un dato 😀" class="a1"><br><br>
+				<br>
+		<br>
+		<input type="button" value="Ingresar" onclick="ingre()" class="a6">
+
+				<br><br><br>
+					<label class="ab">Número Mayor</label><br><br>
+	<input type="text" id="resultado" placeholder="Campo Vacío 😶" class="a8">
+				<br>
+				<br>
+		<input type="button" value="Buscar" onclick="Mostrar()" class="a9">
+</div>
+<div class="emergenteb">
+	<script>
+		vec=[];
+		var n1=document.getElementById("nombre");
+		var y = vec.length;
+		var mayor
+		var ingre=function(){
+		n1=document.getElementById("nombre");
+		y = vec.length;
+		        suma = Number(n1.value);
+		        if (y<5) {
+				vec.push(suma);
+			}
+			else{
+				alert('Base de Datos Llena');
+			}
+			if (y==0) {
+				mayor=n1.value;
+			}
+			else if (vec[y]>mayor){
+              mayor=n1.value;
+			}
+			}
+			var Mostrar=function(){
+			var m1=document.getElementById("resultado");
+            m1.value=mayor;
+			}
+
+			var EstoyaquiperonomeejecutosoloestoyguardandoestoXD=function(){
+			var m1=document.getElementById("resultado");
+			var y = vec;
+			if (vec.length==1) {
+			var z=Math.max(vec[0]);
+		}
+		if (vec.length==2) {
+			var z=Math.max(vec[0],vec[1]);
+		}
+				if (vec.length==3) {
+			var z=Math.max(vec[0],vec[1],vec[2]);
+		}
+				if (vec.length==4) {
+			var z=Math.max(vec[0],vec[1],vec[2],vec[3]);
+		}
+				if (vec.length==5) {
+			var z=Math.max(vec[0],vec[1],vec[2],vec[3],vec[4]);
+		}
+            m1.value=z;
+
+			}
+	</script>
+			<label class="a">Número 1️⃣:</label><br><br>
+		<input type="text" id="nombre" placeholder="Ingresa un dato 😀" class="a1"><br><br>
+				<br>
+		<br>
+		<input type="button" value="Ingresar" onclick="ingre()" class="a6">
+
+				<br><br><br>
+					<label class="ab">Número Mayor</label><br><br>
+	<input type="text" id="resultado" placeholder="Campo Vacío 😶" class="a8">
+				<br>
+				<br>
+		<input type="button" value="Buscar" onclick="Mostrar()" class="a9">
+</div>
+<div class="emergente1">
+		<div class="as" id="asd">
+<br>
+	Hola 😁</div>
+		<div class="bs">
+<br>
+	Chao 👋</div>
+<script type="text/javascript">
+	function spams(){
+	 afa=setInterval(contar,1000);	
+	}
+	function contar(){
+    var numeros = document.getElementById('asd')
+		s=s+1;
+      if (s == 1) {
+      	document.querySelector(".as").style.background="yellow";
+numeros.innerHTML = '<br> 1️⃣';	
+    }
+    if (s == 2) {
+   numeros.innerHTML = '<br> 2️⃣';
+         	document.querySelector(".as").style.background="green";
+    }
+  if (s == 3) {
+           numeros.innerHTML = '<br> 3️⃣';
+                 	document.querySelector(".as").style.background="black";
+    }
+      if (s == 4) {
+           numeros.innerHTML = '<br> 4️⃣';
+                 	document.querySelector(".as").style.background="gold";
+    }
+      if (s == 5) {
+           numeros.innerHTML = '<br> 5️⃣';
+                 	document.querySelector(".as").style.background="cyan";
+    }
+      if (s == 6) {
+           numeros.innerHTML = '<br> 6️⃣';
+                 	document.querySelector(".as").style.background="purple";
+    }
+      if (s == 7) {
+           numeros.innerHTML = '<br> 7️⃣';
+                 	document.querySelector(".as").style.background="lightblue";
+    }
+      if (s == 8) {
+           numeros.innerHTML = '<br> 8️⃣';
+                 	document.querySelector(".as").style.background="orange";
+    }
+      if (s == 9) {
+           numeros.innerHTML = '<br> 9️⃣';
+                 	document.querySelector(".as").style.background="white";
+    }
+      if (s == 10) {	
+           numeros.innerHTML = '<br> 🔟';
+                 	document.querySelector(".as").style.background="pink";
+    }
+      if (s == 11) {
+    	clearInterval("afa");
+    	document.querySelector(".bs").style.display="block";
+	    document.querySelector(".as").style.display="none";
+	}
+}
+</script>
+</div>
+<div class="emergenteb1">
+		<div class="as" id="asd">
+<br>
+	Hola 😁</div>
+		<div class="bs">
+<br>
+	Chao 👋</div>
+<script type="text/javascript">
+	function spams(){
+	 afa=setInterval(contar,1000);	
+	}
+	function contar(){
+    var numeros = document.getElementById('asd')
+		s=s+1;
+      if (s == 1) {
+      	document.querySelector(".as").style.background="yellow";
+numeros.innerHTML = '<br> 1️⃣';	
+    }
+    if (s == 2) {
+   numeros.innerHTML = '<br> 2️⃣';
+         	document.querySelector(".as").style.background="green";
+    }
+  if (s == 3) {
+           numeros.innerHTML = '<br> 3️⃣';
+                 	document.querySelector(".as").style.background="black";
+    }
+      if (s == 4) {
+           numeros.innerHTML = '<br> 4️⃣';
+                 	document.querySelector(".as").style.background="gold";
+    }
+      if (s == 5) {
+           numeros.innerHTML = '<br> 5️⃣';
+                 	document.querySelector(".as").style.background="cyan";
+    }
+      if (s == 6) {
+           numeros.innerHTML = '<br> 6️⃣';
+                 	document.querySelector(".as").style.background="purple";
+    }
+      if (s == 7) {
+           numeros.innerHTML = '<br> 7️⃣';
+                 	document.querySelector(".as").style.background="lightblue";
+    }
+      if (s == 8) {
+           numeros.innerHTML = '<br> 8️⃣';
+                 	document.querySelector(".as").style.background="orange";
+    }
+      if (s == 9) {
+           numeros.innerHTML = '<br> 9️⃣';
+                 	document.querySelector(".as").style.background="white";
+    }
+      if (s == 10) {	
+           numeros.innerHTML = '<br> 🔟';
+                 	document.querySelector(".as").style.background="pink";
+    }
+      if (s == 11) {
+    	clearInterval("afa");
+    	document.querySelector(".bs").style.display="block";
+	    document.querySelector(".as").style.display="none";
+	}
+}
+</script>
+</div>
+<div class="emergente2">
+	<div class="abc" id="mousePositions">X: , Y:</div>
+	<div class="cont" id="sad"></div>
+<script type="text/javascript">
+function position(event){
+var x = event.clientX; 
+var y = event.clientY; 
+var mousePositions = document.getElementById('mousePositions')
+var mousePositions1 = document.getElementById('sad')
+mousePositions.innerHTML = 'X:  '+x+' , Y:  '+y;
+if (y>300&y<500 & x>580&x<780){
+mousePositions1.innerHTML = '<br> Dentro';
+document.querySelector(".cont").style.background="blue";
+}
+else{
+	mousePositions1.innerHTML = '<br> Fuera';
+	document.querySelector(".cont").style.background="green";
+}
+}	
+</script>	
+</div>
+<div class="emergenteb2">
+	<div class="abc" id="mousePositions">X: , Y:</div>
+	<div class="cont" id="sad"></div>
+<script type="text/javascript">
+function position(event){
+var x = event.clientX; 
+var y = event.clientY; 
+var mousePositions = document.getElementById('mousePositions')
+var mousePositions1 = document.getElementById('sad')
+mousePositions.innerHTML = 'X:  '+x+' , Y:  '+y;
+if (y>300&y<500 & x>580&x<780){
+mousePositions1.innerHTML = '<br> Dentro';
+document.querySelector(".cont").style.background="blue";
+}
+else{
+	mousePositions1.innerHTML = '<br> Fuera';
+	document.querySelector(".cont").style.background="green";
+}
+}	
+</script>	
+</div>
+<script type="text/javascript">
+	function e1(){
+		document.querySelector(".emergente").style.display="block";
+				document.querySelector(".emergenteb").style.display="none";
+				document.querySelector(".nomusic1").style.display="block";
+				document.querySelector(".nomusic2").style.display="none";
+				document.querySelector(".nomusic3").style.display="none";
+	}
+	function e2(){
+			document.querySelector(".emergente1").style.display="block";
+				document.querySelector(".emergenteb1").style.display="none";
+				setTimeout(spams,1000);
+				document.querySelector(".nomusic2").style.display="block";
+				document.querySelector(".nomusic1").style.display="none";
+				document.querySelector(".nomusic3").style.display="none";
+	}
+	function e3(){
+	document.querySelector(".emergente2").style.display="block";
+				document.querySelector(".emergenteb2").style.display="none";
+				document.querySelector(".nomusic3").style.display="block";
+				document.querySelector(".nomusic2").style.display="none";
+				document.querySelector(".nomusic1").style.display="none";
+	}
+	function pla(){
+		document.getElementById('home').play();
+      document.querySelector(".music").style.display="none";
+ document.querySelector(".nomusic").style.display="block";
+	}
+		function nopla(){
+		document.getElementById('home').pause();
+      document.querySelector(".music").style.display="block";
+      document.querySelector(".nomusic").style.display="none";
+	}
+			function nopla1(){
+		document.querySelector(".emergenteb").style.display="block";
+		document.querySelector(".emergente").style.display="none";
+	}
+			function nopla2(){
+		document.querySelector(".emergenteb1").style.display="block";
+		document.querySelector(".emergente1").style.display="none";
+	}
+			function nopla3(){
+		document.querySelector(".emergenteb2").style.display="block";
+		document.querySelector(".emergente2").style.display="none";
+	}
+</script>
+</body>
+</html>
